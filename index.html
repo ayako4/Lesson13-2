@@ -1,0 +1,42 @@
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="stylesheet" href="styles/normalize.css" />
+      <link
+         href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
+         rel="stylesheet" />
+      <link
+         rel="stylesheet"
+         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+      <link rel="stylesheet" href="styles/style.css" />
+      <title>Lesson13 Burger Menu</title>
+   </head>
+   <body>
+      <div class="nav" id="nav-bar">
+         <a href="#home" class="active">Home</a>
+         <a href="#news">News</a>
+         <a href="#contact">Contact</a>
+         <a href="#about">About</a>
+         <a class="icon" onclick="burgerMenu()">
+            <i class="fa fa-bars fa-2x"></i>
+         </a>
+      </div>
+
+      <div class="info">
+         <h2>Responsive Topnav Example</h2>
+         <p>As this page gets smaller, the navigation menu will turn into a responsive burger menu.</p>
+      </div>
+
+      <script>
+         function burgerMenu() {
+            let burger = document.getElementById("nav-bar");
+            if (burger.className === "nav") {
+               burger.className += " responsive";
+            } else {
+               burger.className = "nav";
+            }
+         }
+      </script>
+   </body>
+</html>
